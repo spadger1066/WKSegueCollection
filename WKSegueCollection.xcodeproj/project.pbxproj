@@ -13,6 +13,15 @@
 		DCAD69871BD01D2E00D5A7FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCAD69861BD01D2E00D5A7FB /* Assets.xcassets */; };
 		DCAD698A1BD01D2E00D5A7FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCAD69881BD01D2E00D5A7FB /* LaunchScreen.storyboard */; };
 		DCAD69951BD01D2E00D5A7FB /* WKSegueCollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD69941BD01D2E00D5A7FB /* WKSegueCollectionTests.swift */; };
+		DCAD69A51BD01D4D00D5A7FB /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCAD69A31BD01D4D00D5A7FB /* Interface.storyboard */; };
+		DCAD69A71BD01D4D00D5A7FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCAD69A61BD01D4D00D5A7FB /* Assets.xcassets */; };
+		DCAD69AE1BD01D4D00D5A7FB /* WKSegueCollectionWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DCAD69AD1BD01D4D00D5A7FB /* WKSegueCollectionWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DCAD69B51BD01D4D00D5A7FB /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD69B41BD01D4D00D5A7FB /* InterfaceController.swift */; };
+		DCAD69B71BD01D4D00D5A7FB /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD69B61BD01D4D00D5A7FB /* ExtensionDelegate.swift */; };
+		DCAD69B91BD01D4D00D5A7FB /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD69B81BD01D4D00D5A7FB /* NotificationController.swift */; };
+		DCAD69BB1BD01D4D00D5A7FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCAD69BA1BD01D4D00D5A7FB /* Assets.xcassets */; };
+		DCAD69BF1BD01D4D00D5A7FB /* WKSegueCollectionWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DCAD69A11BD01D4D00D5A7FB /* WKSegueCollectionWatch.app */; };
+		DCAD69C91BD01F1E00D5A7FB /* PageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD69C81BD01F1E00D5A7FB /* PageController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +32,46 @@
 			remoteGlobalIDString = DCAD697B1BD01D2E00D5A7FB;
 			remoteInfo = WKSegueCollection;
 		};
+		DCAD69AF1BD01D4D00D5A7FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCAD69741BD01D2D00D5A7FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCAD69AC1BD01D4D00D5A7FB;
+			remoteInfo = "WKSegueCollectionWatch Extension";
+		};
+		DCAD69BD1BD01D4D00D5A7FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCAD69741BD01D2D00D5A7FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCAD69A01BD01D4D00D5A7FB;
+			remoteInfo = WKSegueCollectionWatch;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DCAD69C31BD01D4D00D5A7FB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DCAD69AE1BD01D4D00D5A7FB /* WKSegueCollectionWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCAD69C71BD01D4D00D5A7FB /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				DCAD69BF1BD01D4D00D5A7FB /* WKSegueCollectionWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DCAD697C1BD01D2E00D5A7FB /* WKSegueCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKSegueCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +84,18 @@
 		DCAD69901BD01D2E00D5A7FB /* WKSegueCollectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WKSegueCollectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCAD69941BD01D2E00D5A7FB /* WKSegueCollectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKSegueCollectionTests.swift; sourceTree = "<group>"; };
 		DCAD69961BD01D2E00D5A7FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCAD69A11BD01D4D00D5A7FB /* WKSegueCollectionWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKSegueCollectionWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCAD69A41BD01D4D00D5A7FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		DCAD69A61BD01D4D00D5A7FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCAD69A81BD01D4D00D5A7FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCAD69AD1BD01D4D00D5A7FB /* WKSegueCollectionWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WKSegueCollectionWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCAD69B31BD01D4D00D5A7FB /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		DCAD69B41BD01D4D00D5A7FB /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		DCAD69B61BD01D4D00D5A7FB /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		DCAD69B81BD01D4D00D5A7FB /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		DCAD69BA1BD01D4D00D5A7FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCAD69BC1BD01D4D00D5A7FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCAD69C81BD01F1E00D5A7FB /* PageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +113,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DCAD69AA1BD01D4D00D5A7FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +128,8 @@
 			children = (
 				DCAD697E1BD01D2E00D5A7FB /* WKSegueCollection */,
 				DCAD69931BD01D2E00D5A7FB /* WKSegueCollectionTests */,
+				DCAD69A21BD01D4D00D5A7FB /* WKSegueCollectionWatch */,
+				DCAD69B11BD01D4D00D5A7FB /* WKSegueCollectionWatch Extension */,
 				DCAD697D1BD01D2E00D5A7FB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +139,8 @@
 			children = (
 				DCAD697C1BD01D2E00D5A7FB /* WKSegueCollection.app */,
 				DCAD69901BD01D2E00D5A7FB /* WKSegueCollectionTests.xctest */,
+				DCAD69A11BD01D4D00D5A7FB /* WKSegueCollectionWatch.app */,
+				DCAD69AD1BD01D4D00D5A7FB /* WKSegueCollectionWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,6 +167,38 @@
 			path = WKSegueCollectionTests;
 			sourceTree = "<group>";
 		};
+		DCAD69A21BD01D4D00D5A7FB /* WKSegueCollectionWatch */ = {
+			isa = PBXGroup;
+			children = (
+				DCAD69A31BD01D4D00D5A7FB /* Interface.storyboard */,
+				DCAD69A61BD01D4D00D5A7FB /* Assets.xcassets */,
+				DCAD69A81BD01D4D00D5A7FB /* Info.plist */,
+			);
+			path = WKSegueCollectionWatch;
+			sourceTree = "<group>";
+		};
+		DCAD69B11BD01D4D00D5A7FB /* WKSegueCollectionWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DCAD69B41BD01D4D00D5A7FB /* InterfaceController.swift */,
+				DCAD69C81BD01F1E00D5A7FB /* PageController.swift */,
+				DCAD69B61BD01D4D00D5A7FB /* ExtensionDelegate.swift */,
+				DCAD69B81BD01D4D00D5A7FB /* NotificationController.swift */,
+				DCAD69BA1BD01D4D00D5A7FB /* Assets.xcassets */,
+				DCAD69BC1BD01D4D00D5A7FB /* Info.plist */,
+				DCAD69B21BD01D4D00D5A7FB /* Supporting Files */,
+			);
+			path = "WKSegueCollectionWatch Extension";
+			sourceTree = "<group>";
+		};
+		DCAD69B21BD01D4D00D5A7FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCAD69B31BD01D4D00D5A7FB /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,10 +209,12 @@
 				DCAD69781BD01D2E00D5A7FB /* Sources */,
 				DCAD69791BD01D2E00D5A7FB /* Frameworks */,
 				DCAD697A1BD01D2E00D5A7FB /* Resources */,
+				DCAD69C71BD01D4D00D5A7FB /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DCAD69BE1BD01D4D00D5A7FB /* PBXTargetDependency */,
 			);
 			name = WKSegueCollection;
 			productName = WKSegueCollection;
@@ -134,6 +239,40 @@
 			productReference = DCAD69901BD01D2E00D5A7FB /* WKSegueCollectionTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		DCAD69A01BD01D4D00D5A7FB /* WKSegueCollectionWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCAD69C41BD01D4D00D5A7FB /* Build configuration list for PBXNativeTarget "WKSegueCollectionWatch" */;
+			buildPhases = (
+				DCAD699F1BD01D4D00D5A7FB /* Resources */,
+				DCAD69C31BD01D4D00D5A7FB /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCAD69B01BD01D4D00D5A7FB /* PBXTargetDependency */,
+			);
+			name = WKSegueCollectionWatch;
+			productName = WKSegueCollectionWatch;
+			productReference = DCAD69A11BD01D4D00D5A7FB /* WKSegueCollectionWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		DCAD69AC1BD01D4D00D5A7FB /* WKSegueCollectionWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCAD69C01BD01D4D00D5A7FB /* Build configuration list for PBXNativeTarget "WKSegueCollectionWatch Extension" */;
+			buildPhases = (
+				DCAD69A91BD01D4D00D5A7FB /* Sources */,
+				DCAD69AA1BD01D4D00D5A7FB /* Frameworks */,
+				DCAD69AB1BD01D4D00D5A7FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WKSegueCollectionWatch Extension";
+			productName = "WKSegueCollectionWatch Extension";
+			productReference = DCAD69AD1BD01D4D00D5A7FB /* WKSegueCollectionWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -145,10 +284,19 @@
 				TargetAttributes = {
 					DCAD697B1BD01D2E00D5A7FB = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = W2L76H8G3Y;
 					};
 					DCAD698F1BD01D2E00D5A7FB = {
 						CreatedOnToolsVersion = 7.0.1;
 						TestTargetID = DCAD697B1BD01D2E00D5A7FB;
+					};
+					DCAD69A01BD01D4D00D5A7FB = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = W2L76H8G3Y;
+					};
+					DCAD69AC1BD01D4D00D5A7FB = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = W2L76H8G3Y;
 					};
 				};
 			};
@@ -167,6 +315,8 @@
 			targets = (
 				DCAD697B1BD01D2E00D5A7FB /* WKSegueCollection */,
 				DCAD698F1BD01D2E00D5A7FB /* WKSegueCollectionTests */,
+				DCAD69A01BD01D4D00D5A7FB /* WKSegueCollectionWatch */,
+				DCAD69AC1BD01D4D00D5A7FB /* WKSegueCollectionWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -186,6 +336,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCAD699F1BD01D4D00D5A7FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCAD69A71BD01D4D00D5A7FB /* Assets.xcassets in Resources */,
+				DCAD69A51BD01D4D00D5A7FB /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCAD69AB1BD01D4D00D5A7FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCAD69BB1BD01D4D00D5A7FB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +376,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DCAD69A91BD01D4D00D5A7FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCAD69C91BD01F1E00D5A7FB /* PageController.swift in Sources */,
+				DCAD69B91BD01D4D00D5A7FB /* NotificationController.swift in Sources */,
+				DCAD69B71BD01D4D00D5A7FB /* ExtensionDelegate.swift in Sources */,
+				DCAD69B51BD01D4D00D5A7FB /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -216,6 +394,16 @@
 			isa = PBXTargetDependency;
 			target = DCAD697B1BD01D2E00D5A7FB /* WKSegueCollection */;
 			targetProxy = DCAD69911BD01D2E00D5A7FB /* PBXContainerItemProxy */;
+		};
+		DCAD69B01BD01D4D00D5A7FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCAD69AC1BD01D4D00D5A7FB /* WKSegueCollectionWatch Extension */;
+			targetProxy = DCAD69AF1BD01D4D00D5A7FB /* PBXContainerItemProxy */;
+		};
+		DCAD69BE1BD01D4D00D5A7FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCAD69A01BD01D4D00D5A7FB /* WKSegueCollectionWatch */;
+			targetProxy = DCAD69BD1BD01D4D00D5A7FB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -234,6 +422,14 @@
 				DCAD69891BD01D2E00D5A7FB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DCAD69A31BD01D4D00D5A7FB /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCAD69A41BD01D4D00D5A7FB /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -324,6 +520,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WKSegueCollection/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.technology.luminator.WKSegueCollection;
@@ -335,6 +532,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WKSegueCollection/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.technology.luminator.WKSegueCollection;
@@ -366,6 +564,70 @@
 			};
 			name = Release;
 		};
+		DCAD69C11BD01D4D00D5A7FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "WKSegueCollectionWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.technology.luminator.WKSegueCollection.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		DCAD69C21BD01D4D00D5A7FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "WKSegueCollectionWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.technology.luminator.WKSegueCollection.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		DCAD69C51BD01D4D00D5A7FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = WKSegueCollectionWatch_Extension;
+				INFOPLIST_FILE = WKSegueCollectionWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.technology.luminator.WKSegueCollection.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		DCAD69C61BD01D4D00D5A7FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = WKSegueCollectionWatch_Extension;
+				INFOPLIST_FILE = WKSegueCollectionWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.technology.luminator.WKSegueCollection.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -391,6 +653,22 @@
 			buildConfigurations = (
 				DCAD699D1BD01D2E00D5A7FB /* Debug */,
 				DCAD699E1BD01D2E00D5A7FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DCAD69C01BD01D4D00D5A7FB /* Build configuration list for PBXNativeTarget "WKSegueCollectionWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCAD69C11BD01D4D00D5A7FB /* Debug */,
+				DCAD69C21BD01D4D00D5A7FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DCAD69C41BD01D4D00D5A7FB /* Build configuration list for PBXNativeTarget "WKSegueCollectionWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCAD69C51BD01D4D00D5A7FB /* Debug */,
+				DCAD69C61BD01D4D00D5A7FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
